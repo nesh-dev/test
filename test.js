@@ -5,13 +5,12 @@ function test(name, fn) {
 	tests.push({ name, fn })
 }
 
-function run() {
+function  run () {
 
-	tests.forEach(t => {
+	tests.forEach( t => {
 	
 		try {
 			t.fn()
-		
 			console.log('✅', t.name)
 		} catch (e) {
 
